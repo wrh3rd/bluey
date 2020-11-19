@@ -1,0 +1,23 @@
+{
+  "name": "bluey",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/wrh3rd/bluey.git",
+  "author": "William Hansen <wrh3rd@posteo.net>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "poi --serve"
+  },
+  "dependencies": {
+    "chilli": "wrh3rd/chilli"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "poi": "^12.10.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0"
+  }
+}

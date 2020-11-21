@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
 
-import { NavMenu, NavMenuItem } from '../../lib';
+import { NavMenu, NavMenuItem, View } from '../../lib';
 
 export default ({ children }) => {
   return (
-    <div>
+    <View>
       <NavMenu>
         <NavMenuItem>
           <Link to="/">Home</Link>
@@ -16,6 +16,6 @@ export default ({ children }) => {
       </NavMenu>
 
       {children}
-    </div>
+    </View>
   )
 }

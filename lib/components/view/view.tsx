@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { ViewProps } from '../../props';
+import './view.scss';
 
 export const View = (props: ViewProps) => {
   return (

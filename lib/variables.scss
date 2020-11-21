@@ -1,0 +1,49 @@
+$sm: 640px !default;
+$md: 1280px !default;
+$lg: 1920px !default;
+
+$en: 10% !default;
+$er: 20% !default;
+$est: 30% !default;
+
+$button-radius: 5px !default;
+$pill-radius: 20px !default;
+
+$black: hsl(0, 0%, 0%) !default;
+$dark: hsl(0, 0%, 25%) !default;
+$gray: hsl(0, 0%, 50%) !default;
+$light: hsl(0, 0%, 75%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$primary: hsl(210, 100%, 50%) !default;
+$danger: hsl(0, 100%, 50%) !default;
+$success: hsl(150, 100%, 50%) !default;
+$warning: hsl(60, 100%, 50%) !default;
+
+$primary-fill: $primary !default;
+$danger-fill: $danger !default;
+$success-fill: $success !default;
+$warning-fill: $warning !default;
+
+$primary-text: $white !default;
+$danger-text: $white !default;
+$success-text: $white !default;
+$warning-text: $dark !default;
+
+$primary-item: ($primary-fill, $primary-text) !default;
+$danger-item: ($danger-fill, $danger-text) !default;
+$success-item: ($success-fill, $success-text) !default;
+$warning-item: ($warning-fill, $warning-text) !default;
+
+$theme-colors: (
+  'primary': $primary-item,
+  'danger': $danger-item,
+  'success': $success-item,
+  'warning': $warning-item,
+) !default;
+
+$other-colors: (
+  'danger': $danger-item,
+  'success': $success-item,
+  'warning': $warning-item,
+) !default;

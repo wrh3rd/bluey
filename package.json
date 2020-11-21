@@ -9,14 +9,13 @@
     "dev": "poi --serve"
   },
   "dependencies": {
-    "chilli": "wrh3rd/chilli"
-  },
-  "devDependencies": {
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "@types/react-router-dom": "^5.1.6",
     "poi": "^12.10.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0"
   }

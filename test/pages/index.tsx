@@ -1,12 +1,13 @@
 import * as React from 'react';
 
-import Buttons from '../components/buttons';
 import DefaultLayout from '../layouts/default-layout';
+
+import { Title } from '../..';
 
 export default () => {
   return (
     <DefaultLayout>
-      <Buttons></Buttons>
+      <Title>Bluey</Title>
     </DefaultLayout>
   )
 }

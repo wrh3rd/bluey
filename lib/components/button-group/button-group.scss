@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.button-group {
+  display: flex;
+
+  &.is-pill {
+    > a.button,
+    > button.button {
+      &:first-child {
+        border-bottom-left-radius: $pill-radius;
+        border-top-left-radius: $pill-radius;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: $pill-radius;
+        border-top-right-radius: $pill-radius;
+      }
+    }
+
+    > label.button {
+      &:first-child > span {
+        border-bottom-left-radius: $pill-radius;
+        border-top-left-radius: $pill-radius;
+      }
+
+      &:last-child > span {
+        border-bottom-right-radius: $pill-radius;
+        border-top-right-radius: $pill-radius;
+      }
+    }
+  }
+
+  &.is-square {
+    > a.button,
+    > button.button {
+      &:first-child {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+  
+      &:last-child {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    > label.button {
+      &:first-child > span {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+
+      &:last-child > span {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  > a.button,
+  > button.button {
+    border-radius: 0;
+
+    &:first-child {
+      border-bottom-left-radius: $button-radius;
+      border-top-left-radius: $button-radius;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $button-radius;
+      border-top-right-radius: $button-radius;
+    }
+  }
+
+  > label.button {
+    > span {
+      border-radius: 0;
+    }
+
+    &:first-child > span {
+      border-bottom-left-radius: $button-radius;
+      border-top-left-radius: $button-radius;
+    }
+
+    &:last-child > span {
+      border-bottom-right-radius: $button-radius;
+      border-top-right-radius: $button-radius;
+    }
+  }
+}
+  

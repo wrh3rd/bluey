@@ -1,16 +1,21 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
-import { NavMenu, NavMenuItem } from '../..';
+import { NavMenu, NavMenuItem } from '../../lib';
 
 export default ({ children }) => {
   return (
     <div>
       <NavMenu>
-        <NavMenuItem href="/">Home</NavMenuItem>
-        <NavMenuItem href="/buttons">Buttons</NavMenuItem>
+        <NavMenuItem>
+          <Link to="/">Home</Link>
+        </NavMenuItem>
+        <NavMenuItem>
+          <Link to="/buttons">Buttons</Link>
+        </NavMenuItem>
       </NavMenu>
 
-      <div>{children}</div>
+      {children}
     </div>
   )
 }

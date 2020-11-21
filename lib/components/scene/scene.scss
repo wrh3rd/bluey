@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.scene {
+  margin: auto;
+  width: 100%;
+
+  @media screen and (min-width: $md) {
+    max-width: $md - 32px;
+  }
+
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.section {
+  padding: 25px;
+  width: 100%;
+
+  @media screen and (min-width: $md) {
+    padding: 50px;
+  }
+
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

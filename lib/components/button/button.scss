@@ -1,0 +1,147 @@
+@use "sass:list";
+
+@import "../../variables.scss";
+
+a.button,
+button.button,
+label.button > span {
+  background-color: $primary-fill;
+  border-color: transparent;
+  border-radius: 5px;
+  border-style: solid;
+  color: $primary-text;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+
+  &.is-clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary-fill;
+  }
+
+  &.is-disabled {
+    background-color: $dark;
+    border-color: $dark;
+    color: $white;
+    cursor: default;
+  }
+
+  &.is-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary-fill;
+    text-decoration: underline;
+  }
+  
+  &.is-outlined {
+    background-color: transparent;
+    border-color: $primary-fill;
+    color: $primary-fill;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @each $color-name, $color-value in $other-colors {
+    $color-fill: list.nth($color-value, 1);
+    $color-text: list.nth($color-value, 2);
+
+    &.is-#{$color-name} {
+      background-color: $color-fill;
+      color: $color-text;
+      
+      &.is-clear,
+      &.is-link {
+        background-color: transparent;
+        border-color: transparent;
+        color: $color-fill;
+      }
+      
+      &.is-outlined {
+        background-color: transparent;
+        border-color: $color-fill;
+        color: $color-fill;
+      }
+    }
+  }
+}
+
+a.button,
+button.button {
+  &.is-clear {
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken($primary-fill, $en);
+    }
+  }
+
+  &.is-disabled {
+    &:hover {
+      background-color: $dark;
+      border-color: $dark;
+      color: $white;
+    }
+  }
+
+  &.is-link {
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken($primary-fill, $en);
+    }
+  }
+  
+  &.is-outlined {
+    &:hover {
+      background-color: transparent;
+      border-color: darken($primary-fill, $en);
+      color: darken($primary-fill, $en);
+    }
+  }
+
+  &:hover {
+    background-color: darken($primary, $en);
+  }
+
+  @each $color-name, $color-value in $other-colors {
+    $color-fill: list.nth($color-value, 1);
+    $color-text: list.nth($color-value, 2);
+
+    &.is-#{$color-name} {
+      &.is-clear,
+      &.is-link {
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+          color: darken($color-fill, $en);
+        }
+      }
+      
+      &.is-outlined {
+        &:hover {
+          background-color: transparent;
+          border-color: darken($color-fill, $en);
+          color: darken($color-fill, $en);
+        }
+      }
+    
+      &:hover {
+        background-color: darken($color-fill, $en);
+      }
+    }
+  }
+}
+
+label.button {
+  > input {
+    display: none;
+  
+    &:not(:checked) ~ span {
+      background-color: darken($primary, $er);
+    }
+  }
+}

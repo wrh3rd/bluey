@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.checkbox {
+  display: inline-block;
+  padding: 10px 20px 10px 25px;
+  position: relative;
+
+  > input[type="checkbox"] {
+    display: none;
+  }
+
+  > input[type="checkbox"]:checked ~ span::before {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  
+  > span::before {
+    border: 1px solid $light;
+    border-radius: 5px;
+    content: " ";
+    display: inline-block;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    width: 16px;
+  }
+}

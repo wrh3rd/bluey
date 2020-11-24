@@ -6,10 +6,12 @@ import { ButtonType } from '../../types';
 import './nav-menu-item.scss';
 
 export const NavMenuItem = (props: NavMenuItemProps) => {
-  let className = 'nav-menu-item';
+  let className = 'nav-menu-item' + (props.className && props.className.length > 0 ? ' ' + props.className : '');
 
   return (
     <Button className={className} 
+            style={props.style}
+            title={props.title}
             type={ButtonType.Clear}
             onClick={() => { 
               if (props.href) { 

@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.label {
+  border-color: transparent;
+  border-radius: 5px;
+  border-style: solid;
+  display: inline-block;
+  padding: 10px 0;
+
+  &.is-link {
+    text-decoration: underline;
+  }
+
+  &.is-outlined {
+    border-color: inherit !important;
+  }
+}

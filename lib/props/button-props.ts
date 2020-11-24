@@ -6,6 +6,5 @@ export interface ButtonProps extends Props {
   name?: string;
   onClick?: React.FormEventHandler<HTMLButtonElement>;
   theme?: ThemeType | string;
-  title?: string;
   type?: ButtonType | string;
 }

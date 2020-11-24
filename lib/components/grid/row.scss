@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+.grid {
+  .row {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $md + 1px) {
+      flex-direction: row;
+
+      &:not(:first-child) {
+        padding-top: 2px;
+      }
+      
+      &:not(:last-child) {
+        padding-bottom: 2px;
+      }
+    }
+
+    @media screen and (max-width: $md) {
+      &:not(:first-child) {
+        padding-top: 2px;
+      }
+      
+      &:not(:last-child) {
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+.row {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.flow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  > * {
+    &:not(:first-child) {
+      margin-left: 2px;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 2px;
+    }
+  }
+}

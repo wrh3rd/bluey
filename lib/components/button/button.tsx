@@ -6,7 +6,7 @@ import './button.scss';
 
 export const Button = (props: ButtonProps) => {
   let checked = false;
-  let className = 'button';
+  let className = 'button' + (props.className && props.className.length > 0 ? ' ' + props.className : '');;
   let type = 'button';
 
   if (props.theme) {

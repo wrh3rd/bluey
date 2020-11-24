@@ -11,5 +11,6 @@ export * from './scene';
 export * from './section';
 export * from './tag';
 export * from './text';
+export * from './textbox';
 export * from './title';
 export * from './view';

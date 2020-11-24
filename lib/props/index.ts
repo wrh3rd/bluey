@@ -16,5 +16,6 @@ export * from './scene-props';
 export * from './section-props';
 export * from './tag-props';
 export * from './text-props';
+export * from './textbox-props';
 export * from './title-props';
 export * from './view-props';

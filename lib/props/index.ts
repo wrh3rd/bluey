@@ -2,6 +2,7 @@ export * from './button-group-props';
 export * from './button-props';
 export * from './checkbox-props';
 export * from './column-props';
+export * from './drop-down-props';
 export * from './flow-props';
 export * from './grid-props';
 export * from './label-props';

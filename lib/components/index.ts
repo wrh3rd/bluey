@@ -1,6 +1,7 @@
 export * from './button';
 export * from './button-group';
 export * from './checkbox';
+export * from './drop-down';
 export * from './flow';
 export * from './grid';
 export * from './label';

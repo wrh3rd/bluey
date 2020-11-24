@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.panel {
+  display: inline-block;
+
+  > *:first-child {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  > *:not(:first-child) {
+    display: none;
+  }
+}

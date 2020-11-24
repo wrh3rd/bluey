@@ -7,6 +7,7 @@ export * from './grid-props';
 export * from './label-props';
 export * from './nav-menu-item-props';
 export * from './nav-menu-props';
+export * from './panel-props';
 export * from './radio-props';
 export * from './route-props';
 export * from './router-props';

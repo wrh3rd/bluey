@@ -11,8 +11,8 @@ export const Label = (props: LabelProps) => {
   }
 
   return (
-    <div className={className} 
-         style={props.style}
-         title={props.title}>{props.children}</div>
+    <label className={className} 
+           style={props.style}
+           title={props.title}>{props.children}</label>
   );
 }

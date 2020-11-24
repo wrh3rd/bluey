@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.tag {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 5px;
+  border-style: solid;
+  color: $white;
+  display: inline-block;
+  padding: 2px 4px;
+
+  &.is-clear {
+    background-color: $white !important;
+    border-color: $white !important;
+    color: $primary !important;
+  }
+
+  &.is-link {
+    background-color: $white !important;
+    border-color: $white !important;
+    color: $primary !important;
+    text-decoration: underline;
+  }
+
+  &.is-outlined {
+    background-color: $white !important;
+    color: $primary !important;
+  }
+}

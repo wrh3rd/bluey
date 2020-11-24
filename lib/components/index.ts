@@ -9,6 +9,7 @@ export * from './panel';
 export * from './radio';
 export * from './scene';
 export * from './section';
+export * from './tag';
 export * from './text';
 export * from './title';
 export * from './view';

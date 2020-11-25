@@ -5,6 +5,7 @@ export * from './drop-down';
 export * from './flow';
 export * from './grid';
 export * from './label';
+export * from './list';
 export * from './nav-menu';
 export * from './panel';
 export * from './radio';

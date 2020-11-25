@@ -1,0 +1,31 @@
+.list {
+  &.is-circle {
+    list-style-type: circle;
+  }
+
+  &.is-decimal {
+    list-style-type: decimal;
+  }
+
+  &.is-disc {
+    list-style-type: disc;
+  }
+
+  &.is-inside {
+    list-style-position: inside;
+  }
+
+  &.is-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.is-outside {
+    list-style-position: outside;
+  }
+
+  &.is-square {
+    list-style-type: square;
+  }
+}

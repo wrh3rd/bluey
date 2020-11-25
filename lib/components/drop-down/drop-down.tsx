@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { DropDownProps } from '../../props';
-import './flow.scss';
+import './drop-down.scss';
 
 export const DropDown = (props: DropDownProps) => {
   let className = 'drop-down' + (props.className && props.className.length > 0 ? ' ' + props.className : '');

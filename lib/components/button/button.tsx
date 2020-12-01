@@ -6,7 +6,7 @@ import './button.scss';
 
 export const Button = (props: ButtonProps) => {
   let checked = false;
-  let className = 'button' + (props.className && props.className.length > 0 ? ' ' + props.className : '');;
+  let className = 'button' + (props.className && props.className.length > 0 ? ' ' + props.className : '');
   let type = 'button';
 
   if (props.theme) {
@@ -14,7 +14,6 @@ export const Button = (props: ButtonProps) => {
   }
 
   if (props.type) {
-    console.log(props.type);
     if (props.type === ButtonType.Checkbox) {
       type = 'checkbox';
 

@@ -2,6 +2,11 @@
 
 nav.nav-menu {
   > .nav-menu-item {
-    padding: 10px;
+    font-size: 1.6rem;
+
+    > * {
+      display: block;
+      padding: 15px;
+    }
   }
 }

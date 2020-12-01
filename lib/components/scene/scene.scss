@@ -2,10 +2,11 @@
 
 .scene {
   margin: auto;
+  padding: 15px;
   width: 100%;
 
   @media screen and (min-width: $md) {
-    max-width: $md - 32px;
+    max-width: $md;
   }
 
   > *:not(:last-child) {

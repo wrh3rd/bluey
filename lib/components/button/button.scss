@@ -5,11 +5,11 @@
 a.button,
 button.button,
 label.button > span {
-  background-color: $primary-fill;
+  background-color: $gray;
   border-color: transparent;
   border-radius: 5px;
   border-style: solid;
-  color: $primary-text;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-size: 1.6rem;
@@ -18,7 +18,7 @@ label.button > span {
   &.is-clear {
     background-color: transparent;
     border-color: transparent;
-    color: $primary-fill;
+    color: $dark;
   }
 
   &.is-disabled {
@@ -31,21 +31,21 @@ label.button > span {
   &.is-link {
     background-color: transparent;
     border-color: transparent;
-    color: $primary-fill;
+    color: $dark;
     text-decoration: underline;
   }
   
   &.is-outlined {
     background-color: transparent;
-    border-color: $primary-fill;
-    color: $primary-fill;
+    border-color: $dark;
+    color: $dark;
   }
 
   &:focus {
     outline: none;
   }
 
-  @each $color-name, $color-value in $other-colors {
+  @each $color-name, $color-value in $theme-colors {
     $color-fill: list.nth($color-value, 1);
     $color-text: list.nth($color-value, 2);
 
@@ -75,7 +75,7 @@ button.button {
     &:hover {
       background-color: transparent;
       border-color: transparent;
-      color: darken($primary-fill, $en);
+      color: darken($dark, $en);
     }
   }
 
@@ -91,23 +91,23 @@ button.button {
     &:hover {
       background-color: transparent;
       border-color: transparent;
-      color: darken($primary-fill, $en);
+      color: darken($dark, $en);
     }
   }
   
   &.is-outlined {
     &:hover {
       background-color: transparent;
-      border-color: darken($primary-fill, $en);
-      color: darken($primary-fill, $en);
+      border-color: darken($dark, $en);
+      color: darken($dark, $en);
     }
   }
 
   &:hover {
-    background-color: darken($primary, $en);
+    background-color: darken($gray, $en);
   }
 
-  @each $color-name, $color-value in $other-colors {
+  @each $color-name, $color-value in $theme-colors {
     $color-fill: list.nth($color-value, 1);
     $color-text: list.nth($color-value, 2);
 
@@ -141,7 +141,7 @@ label.button {
     display: none;
   
     &:not(:checked) ~ span {
-      background-color: darken($primary, $er);
+      background-color: darken($gray, $er);
     }
   }
 }

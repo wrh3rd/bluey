@@ -1,4 +1,5 @@
 export * from './button-group-props';
+export * from './button-link-props';
 export * from './button-props';
 export * from './checkbox-props';
 export * from './column-props';
